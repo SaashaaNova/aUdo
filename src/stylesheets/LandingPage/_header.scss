@@ -1,0 +1,81 @@
+@import '../mixins.scss';
+
+.land-page-header {
+    width: 100%;
+    position: fixed;
+}
+
+.land-page-logo {
+    font-family: 'Holtwood One SC', serif;
+    text-align: center;
+    
+    h1 {
+        font-size: 4em;
+        margin: 0;
+    }
+
+    span {
+        color: #f9c910;
+        font-size: 1.3em;
+    }
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .space {
+        width: 30%;
+    }
+}
+
+.land-page-nav-list {
+    width: 40%;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+.nav-list-item {
+    font-size: 1.2em;
+    padding: 0 1.5em;
+    font-weight: 700;
+    transition: 0.8s;
+    cursor: pointer;
+
+    &:hover{
+        color: #f9c910;
+    }
+}
+
+.land-page-nav-log {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 33%;
+
+}
+
+.land-page-log-in-btn {
+    button {
+        @include buttonMixin(none);   
+    }
+  
+}
+
+.land-page-register-btn {
+    button {
+        @include buttonMixin(#f9c910);
+        border-radius: 5px;
+        color: white;
+    }
+}
+
