@@ -1,13 +1,13 @@
 @import '../mixins.scss';
 
 .main-bg-container{
-    // background: url('../../imgs/bgImg.jpg');
+    background: url('../imgs/bgImg.jpg') no-repeat;
     width: 100%;
     height: 100vh;
     display: flex;
 }
 
-.bg-pic {
+.bg-empty {
     width: 40%;
     height: 100%;
 }

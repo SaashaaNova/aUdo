@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import '../stylesheets/main.scss';
 import FrontPicture from './LandingPage/FrontPicture.js';
 import HeaderLandingPage from './LandingPage/HeaderLandingPage.js';
-import '../stylesheets/main.scss';
-
+import CounterSection from './LandingPage/CounterSection.js';
+import StepsSection from './LandingPage/StepsSection.js';
+import AboutUs from './LandingPage/AboutUs.js';
+import FundationList from './LandingPage/FundationList.js';
 
 class App extends Component {
   render() {
@@ -10,6 +13,10 @@ class App extends Component {
       <div className="App">
         <HeaderLandingPage />
         <FrontPicture />
+        <CounterSection />
+        <StepsSection />
+        <AboutUs />
+        <FundationList />
       </div>
     );
   }

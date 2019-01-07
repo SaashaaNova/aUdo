@@ -6,7 +6,7 @@ Why 'aUdo' ? Because 'ayudar' in Spanish means 'to help' and the first person co
 Website made with : React & SASS & Firebase
 
 ## What include :
-* Landing Page made with the aid of SASS
-* Scelet of the website made in React
-* Conection with Firebase to allow sign in and manage user's dashboard
+* Landing page made with the aid of SASS
+* Skeleton of the website made in React
+* Connection with Firebase to allow sign in and manage user's dashboard
 

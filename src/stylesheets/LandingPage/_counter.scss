@@ -1,0 +1,32 @@
+.counter-container {
+    background: #f9c910;
+    height: 40em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.counter-info-section {
+    text-align: center;
+    padding: 4em;
+
+    h2 {
+        font-size: 8em;
+        color: #737373;
+        margin: 0;
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: 400;
+        color: #737373;
+        text-transform: uppercase;
+    }
+    p  {
+        font-size: 1.4em;
+        color: #737373;
+    }
+}

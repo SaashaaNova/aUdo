@@ -1,0 +1,45 @@
+@import '../mixins.scss';
+
+.steps-container {
+    padding: 5em;
+}
+.steps-title {
+    text-align: center;
+    h1 {
+        font-size: 3em;
+        color: #737373;
+    }
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one-step {
+    padding: 3em;
+    text-align: center;
+
+    .icon {
+        font-size: 6em;
+        color: #737373;
+    }
+    h3 {
+        font-size: 1.7em;
+        color: #737373;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    
+}
+
+.steps-register-btn {
+    text-align: center;
+    button {
+        @include buttonMixin(#f9c910);
+        border-radius: 5px;
+        color: white;
+    }
+}
