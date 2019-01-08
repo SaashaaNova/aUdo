@@ -43,34 +43,7 @@ return (
                                 <p>Cel i misja: Pomoc dla osób nie posiadjących miejsca zamieszkania </p>
                                 <p className="things">ubrania, jedzenie, ciepłe koce</p>
                             </div>
-                        </div>
-                        <div className='one-list-item'>
-                            <div className="fundation-title">
-                                <h4>Fundacja "Dbam o Zdrowie"</h4>
-                            </div>
-                            <div className="fundation-description">
-                                <p>Cel i misja: Pomoc osobom potrzebujacym w trudnej sytuacji życiowej</p>
-                                <p className="things">ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
-                            </div>
-                        </div>
-                        <div className='one-list-item'>
-                            <div className="fundation-title">
-                                <h4>Fundacja "Dla dzieci"</h4>
-                            </div>
-                            <div className="fundation-description">
-                                <p>Cel i misja: Pomoc dzieciom z ubogich rodzin</p>
-                                <p className="things">ubrania, meble, zabawki</p>
-                            </div>
-                        </div>
-                        <div className='one-list-item'>
-                            <div className="fundation-title">
-                                <h4>Fundacja "Bez domu"</h4>
-                            </div>
-                            <div className="fundation-description">
-                                <p>Cel i misja: Pomoc dla osób nie posiadjących miejsca zamieszkania </p>
-                                <p className="things">ubrania, jedzenie, ciepłe koce</p>
-                            </div>
-                        </div>    
+                        </div>   
                     </div>
 
                     <div label='Organizacje pozarządowe'>

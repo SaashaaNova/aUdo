@@ -1,5 +1,6 @@
 .list-container {
     color: #737373;
+    margin-bottom: 6em;
 }
 .list-title {
     font-size: 4em;
@@ -22,12 +23,12 @@
 .tab-list {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .tab-list-item {
     padding: 2em;
     font-size: 2em;
-   
 }
 
 .tab-list-active {
