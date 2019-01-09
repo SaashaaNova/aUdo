@@ -20,6 +20,10 @@
     }
 }
 
+.tabs {
+    height: 50em;
+}
+
 .tab-list {
     display: flex;
     justify-content: center;
@@ -34,9 +38,7 @@
 .tab-list-active {
     color: #f9c910;
     font-weight: 700;
-    transition: opacity 150ms ease-in;
-    transition-delay: 150ms;
-    opacity: 1;
+    
 }
 
 .tab-content {
@@ -67,4 +69,15 @@
     }
 }
 
+.pagination-numbers {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
+    div {
+        font-size: 2em;
+        padding: 0 1em;
+        font-weight: 700;
+    }
+}

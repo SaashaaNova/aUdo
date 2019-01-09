@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import Tabs from './Tabs'
+import FundationTabs from './FundationTabs'
+import ScrollableAnchor from 'react-scrollable-anchor'
+import FundationPagination from './FundationPagination'
 
 class FundationList extends Component {
+
 render() {
+
+    
 return (
     <div className='list-container'>
-        <div className='container'>
+        <ScrollableAnchor id={'FundacjeiOrganizacje'}>
+            <div className='container'>
             <h2 className='list-title'>Komu pomagamy</h2>
             <div className='Tabs'>
                 <div className='list-description'>
@@ -15,37 +21,10 @@ return (
                     </div>
                     <div></div> 
                 </div>
-                <Tabs>
+                <FundationTabs>
                     <div label='Fundacje'>
-                        <div className='one-list-item'>
-                            <div className="fundation-title">
-                                <h4>Fundacja "Dbam o Zdrowie"</h4>
-                            </div>
-                            <div className="fundation-description">
-                                <p>Cel i misja: Pomoc osobom potrzebujacym w trudnej sytuacji życiowej</p>
-                                <p className="things">ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
-                            </div>
-                        </div>
-                        <div className='one-list-item'>
-                            <div className="fundation-title">
-                                <h4>Fundacja "Dla dzieci"</h4>
-                            </div>
-                            <div className="fundation-description">
-                                <p>Cel i misja: Pomoc dzieciom z ubogich rodzin</p>
-                                <p className="things">ubrania, meble, zabawki</p>
-                            </div>
-                        </div>
-                        <div className='one-list-item'>
-                            <div className="fundation-title">
-                                <h4>Fundacja "Bez domu"</h4>
-                            </div>
-                            <div className="fundation-description">
-                                <p>Cel i misja: Pomoc dla osób nie posiadjących miejsca zamieszkania </p>
-                                <p className="things">ubrania, jedzenie, ciepłe koce</p>
-                            </div>
-                        </div>   
+                        <FundationPagination />
                     </div>
-
                     <div label='Organizacje pozarządowe'>
                         <div className='one-list-item'>
                             <div className="fundation-title">
@@ -105,11 +84,11 @@ return (
                             </div>
                         </div>
                     </div>
-                </Tabs>
+                </FundationTabs>
             </div>
 
         </div>
-        
+        </ScrollableAnchor>
         
     </div>
 );

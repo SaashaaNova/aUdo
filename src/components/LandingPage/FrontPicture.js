@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 class FrontPicture extends Component {
+
+
 render() {
+
 return (
-    <div className="main-bg-container">
+    <ScrollableAnchor id={'Start'} >
+        <div className="main-bg-container">
         <div className="bg-empty"></div>
         <div className="bg-left-section">
             <div className='bg-text'>
@@ -16,6 +21,7 @@ return (
             </div>  
         </div>
     </div>
+    </ScrollableAnchor>
 );
 }
 }
