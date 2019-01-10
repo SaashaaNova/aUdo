@@ -1,0 +1,97 @@
+@import '../mixins.scss';
+
+
+.contact-container {
+    background: url('../imgs/footer.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-bottom: 5em;
+}
+
+.left-container {
+    width: 65%;
+}
+.contact-form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #737373;
+
+    h1 {
+        font-size: 5em;
+    }
+
+}
+form {
+
+    .form-title h2 {
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .form-contianer {
+        text-align: center;
+    }
+
+    .form-data {
+        width: 100%;
+    }
+
+    .form-name,
+    .email-form {
+        width: 40%;
+        background: none;
+        border: none;
+        font-size: 2em;
+        border-bottom: 1px solid #737373;
+        margin: 1em;
+    }
+
+    .form-name:focus,
+    .email-form:focus {
+        outline: none;
+
+        &::placeholder {
+            font-size: 0;
+        }
+    }
+  
+    .message-form {
+        width: 100%;
+        
+        textarea {
+            width: 88%;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #737373;
+            font-size: 2em;
+            resize: none;
+            overflow: auto;
+            margin: 1em;
+            outline: none;
+    
+            &::placeholder {
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            &:focus::placeholder {
+                font-size: 0;
+            }
+        }
+       
+    }
+
+    button {
+        @include buttonMixin(#f9c910);
+        border-radius: 5px;
+        color: white;
+    }
+
+}
+

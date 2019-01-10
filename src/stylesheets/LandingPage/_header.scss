@@ -22,6 +22,7 @@
     a {
         text-decoration: none;
         color: inherit;
+        cursor: pointer;
     }
 }
 
@@ -54,6 +55,7 @@
     }
 }
 
+
 .nav-list-item-top  {
     font-size: 1.2em;
     padding: 0 1.5em;
@@ -64,6 +66,10 @@
     &:hover{
         color: #f9c910;
     }
+
+    // .active-link:focus {
+    //     color: #f9c910;
+    // }
 }
 
 .land-page-nav-log-top  {

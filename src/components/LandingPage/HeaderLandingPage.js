@@ -1,40 +1,58 @@
 import React, { Component } from 'react';
-
+import * as Scroll from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll'
+import {
+  Link
+} from 'react-router-dom'
 
 class HeaderLandingPage extends Component {
 
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  }
 
   render() {
-
-    configureAnchors({scrollDuration: 1000});
 
     return (
       <header className='land-page-header-top '>
         <div className='container'>
           <div className='page-header-top'>
             <div className='land-page-logo-top'>
-              <a href="#Start">
+              <a href='#' onClick={this.scrollToTop}>
                 <h1>a<span>U</span>do</h1>
               </a>
             </div>
-
             <div className='header-container-top'>
               <div className='space-top'></div>
               <nav className='land-page-nav-list-top'>
                 <ul>
-                  <li className='nav-list-item-top'><a href="#">Start</a></li>
-                  <li className='nav-list-item-top'><a href="#OCoChodzi">O co chodzi ?</a></li>
-                  <li className='nav-list-item-top'><a href="#Onas">O nas</a></li>
-                  <li className='nav-list-item-top'><a href="#FundacjeiOrganizacje">Fundacje i organizacje</a></li>
-                  <li className='nav-list-item-top'><a href="#Kontakt">Kontakt</a></li>
+                  <li className='nav-list-item-top'>
+                    <a href='#' onClick={this.scrollToTop} activeclass="active-link">Start</a>
+                  </li>
+                  <Scroll.Link activeclass="active-link" to="OcoChodzi" spy={true} smooth={true} offset={50} duration={500}>
+                    <li className='nav-list-item-top'>O co chodzi ?</li>
+                  </Scroll.Link>
+                  <Scroll.Link activeclass="active-link" to="Onas" spy={true} smooth={true} offset={50} duration={500}>
+                    <li className='nav-list-item-top'>O nas</li>
+                  </Scroll.Link>
+                  <Scroll.Link activeclass="active-link" to="ListaFundacji" spy={true} smooth={true} offset={50} duration={500}>
+                    <li className='nav-list-item-top'>Fundacje i organizacje</li>
+                  </Scroll.Link>
+                  <Scroll.Link activeClass="active-link" to="Kontakt" spy={true} smooth={true} offset={50} duration={500}>
+                    <li className='nav-list-item-top'>Kontakt</li>
+                  </Scroll.Link>
                 </ul>
               </nav>
               <div className='land-page-nav-log-top'>
                 <div className='land-page-log-in-btn-top'> 
-                  <button >Zaloguj</button>
+                  <Link to="/signin">
+                    <button >Zaloguj</button>
+                  </Link>  
                 </div>
                 <div className='land-page-register-btn-top'>
-                  <button>Załóż konto</button>
+                  <Link to="/register">
+                    <button>Załóż konto</button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { Element} from 'react-scroll';
 import FundationTabs from './FundationTabs'
-import ScrollableAnchor from 'react-scrollable-anchor'
 import FundationPagination from './FundationPagination'
 
 class FundationList extends Component {
@@ -9,8 +9,8 @@ render() {
 
     
 return (
-    <div className='list-container'>
-        <ScrollableAnchor id={'FundacjeiOrganizacje'}>
+    <Element name="ListaFundacji" className="element">
+        <div className='list-container'>
             <div className='container'>
             <h2 className='list-title'>Komu pomagamy</h2>
             <div className='Tabs'>
@@ -88,9 +88,9 @@ return (
             </div>
 
         </div>
-        </ScrollableAnchor>
         
     </div>
+    </Element>
 );
 }
 }

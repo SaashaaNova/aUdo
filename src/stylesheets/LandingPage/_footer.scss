@@ -1,0 +1,54 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0px;
+    color: #737373;
+}
+
+.empty-footer {
+    width: 30%;
+}
+.logo-footer {
+    width: 40%;
+    text-align: center;
+    font-family: 'Holtwood One SC', serif;
+    transition: 0.8s;
+    cursor: pointer;
+    h1{
+        font-size: 2em;
+    }
+
+    span {
+        font-size: 1.4em;
+    }
+
+
+    &:hover {
+        color: #f9c910;
+
+    }
+}
+
+.social-icons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.icon-footer {
+    font-size: 2em;
+    padding: 1em 0.5em;
+    transition: 0.8s;
+    cursor: pointer;
+
+    &:hover {
+        color: #f9c910;
+
+    }
+}
+

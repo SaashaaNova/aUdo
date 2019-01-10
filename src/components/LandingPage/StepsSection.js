@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {
+    Link
+  } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTshirt, faBoxOpen, faSearchPlus, faTruck } from '@fortawesome/free-solid-svg-icons';
@@ -51,7 +54,8 @@ return (
             </div>
         </div>
         <div className='steps-register-btn'>
-            <button>Załóż konto</button>
+            <Link to="/signin">                          <button>Załóż konto</button>
+            </Link>
         </div>
     </div>
 

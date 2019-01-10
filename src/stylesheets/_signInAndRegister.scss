@@ -1,0 +1,73 @@
+.user-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-sign-in,
+.user-register {
+    width: 50em;
+    height: 37em;
+}
+.user-title {
+   text-align: center;
+    h1 {
+        font-size: 3em;
+        color: #737373;
+    }
+}
+.form-sign-in,
+.form-register {
+    text-align: center;
+
+    .form-control-sign-in,
+    .form-control-register {
+        width: 90%;
+        background: none;
+        border: none;
+        font-size: 1.7em;
+        border-bottom: 1px solid #737373;
+        margin: 1em;
+        padding-left: 0.5em;
+        padding-bottom: 0.5em;
+
+        &:focus {
+            outline: none;
+    
+            &::placeholder {
+                font-size: 0;
+            }
+        }    
+        
+    }
+
+}
+
+
+.go-to-register,
+.go-to-sing-in {
+    padding-top: 2em;
+    margin-right: 0;
+    float: right;
+
+    button {
+        font-size: 1.3em;
+        background: none;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.8s;
+
+        &:hover {
+            color: #ebebeb;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+}
+
+

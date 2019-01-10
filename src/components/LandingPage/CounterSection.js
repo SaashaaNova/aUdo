@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor'
+import { Element} from 'react-scroll';
 
 class CounterSection extends Component {
 render() {
 return (
-    <div className='counter-container'>
-        <ScrollableAnchor id={'OCoChodzi'}>
+    <Element name="OcoChodzi" className="element">
+        <div className='counter-container'>
             <div className='container flex-container'>
                 <div className='counter-info-section'>
                     <h2>10</h2>
@@ -23,8 +23,9 @@ return (
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorum delectus doloremque modi molestias.</p>
                 </div>
             </div>
-        </ScrollableAnchor>
-    </div>
+        </div>
+    </Element>
+        
 );
 }
 }
