@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import {
-    Link
-  } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTshirt, faBoxOpen, faSearchPlus, faTruck } from '@fortawesome/free-solid-svg-icons';
+
+import {
+    Link
+  } from 'react-router-dom'
 
 library.add(faTshirt, faBoxOpen, faSearchPlus, faTruck);
 
 class StepsSection extends Component {
 render() {
 return (
-    <div className='steps-container container'>
+    <section className='steps-container container'>
         <div className='steps-title'>
             <h1>Wystarczą 4 proste kroki</h1>           
         </div>
@@ -57,7 +58,7 @@ return (
             <Link to="/signin">                          <button>Załóż konto</button>
             </Link>
         </div>
-    </div>
+    </section>
 
 );
 }

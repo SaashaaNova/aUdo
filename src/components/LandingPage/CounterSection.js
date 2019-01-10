@@ -5,7 +5,7 @@ class CounterSection extends Component {
 render() {
 return (
     <Element name="OcoChodzi" className="element">
-        <div className='counter-container'>
+        <section className='counter-container'>
             <div className='container flex-container'>
                 <div className='counter-info-section'>
                     <h2>10</h2>
@@ -23,7 +23,7 @@ return (
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorum delectus doloremque modi molestias.</p>
                 </div>
             </div>
-        </div>
+        </section>
     </Element>
         
 );

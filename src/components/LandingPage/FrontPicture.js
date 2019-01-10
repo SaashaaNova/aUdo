@@ -9,7 +9,7 @@ class FrontPicture extends Component {
 render() {
 
 return (
-     <div className="main-bg-container">
+     <section className="main-bg-container">
         <div className="bg-empty"></div>
         <div className="bg-right-section">
             <div className='bg-text'>
@@ -25,7 +25,7 @@ return (
                 </Link>
             </div>  
         </div>
-    </div>
+    </section>
     );
 }
 }
