@@ -1,0 +1,66 @@
+.header-dashboard-container {
+    width: 100%;
+    height: 7em;
+    position: absolute;
+}
+
+.header-user-profile {
+   display: flex;
+   align-items: center;
+   float: right;
+   padding: 1em;
+   margin: 3em 7em 0 0;
+   position: relative;
+
+    p {
+        font-size: 2em;
+        padding-right: 0.5em;
+    }
+
+    button {
+        height: 1em;
+        background: none;
+        border: none;
+        font-size: 3.2em;
+        transition: 0.5s;
+    
+        &:hover {
+            color: #ebebeb;
+        }
+
+        &:active {
+            color: #f9c910;
+        }
+
+        &:focus {
+            outline: none;
+            color: #f9c910;
+        }
+
+    }
+}
+
+.profile-options {
+    width: 100%;
+    background: #f9c910;
+    position: absolute;
+    padding: 8px 0;
+    bottom: -230%;
+    left: 0;
+    border-radius:0 0 20px 20px;
+
+}
+.profile-option-item {
+    list-style: none;
+    font-size: 1.6em;
+    padding: 0.8em;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+
+    &:hover {
+        color: #737373;
+    }
+
+}
