@@ -17,27 +17,37 @@
         padding-right: 0.5em;
     }
 
-    button {
-        height: 1em;
-        background: none;
-        border: none;
-        font-size: 3.2em;
-        transition: 0.5s;
-    
-        &:hover {
-            color: #ebebeb;
-        }
+}
 
-        &:active {
-            color: #f9c910;
-        }
+.unactive {
+    height: 1em;
+    background: none;
+    border: none;
+    font-size: 3.2em;
+    transition: 0.5s;
 
-        &:focus {
-            outline: none;
-            color: #f9c910;
-        }
-
+    &:hover {
+        color: #ebebeb;
     }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.active {
+    height: 1em;
+    background: none;
+    border: none;
+    font-size: 3.2em;
+    transition: 0.5s;
+    color: #f9c910;
+
+    &:focus {
+        outline: none;
+        color: #f9c910;
+    }
+
 }
 
 .profile-options {

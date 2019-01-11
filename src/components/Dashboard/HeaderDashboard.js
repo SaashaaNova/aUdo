@@ -8,12 +8,12 @@ library.add(faCog);
 class HeaderDashboard extends Component {
 
     state = {
-        listOpen: false
+        listOpen: false,
     }
 
     handleDropDown = () => {
         this.setState({
-            listOpen: true
+            listOpen: !this.state.listOpen,
         })
     }
 
@@ -22,12 +22,12 @@ class HeaderDashboard extends Component {
     <header className="header-dashboard-container">
         <div className='header-user-profile'>
             <p>Witaj Agata</p>
-            <button onCLick={this.handleDropDown}>
+            <button onClick={this.handleDropDown} className={!this.state.listOpen ?'unactive' :'active'}>
                 <FontAwesomeIcon
                     icon = 'cog'
                 />
             </button>
-            <ul className='profile-options'>
+            <ul className='profile-options' style={{display: !this.state.listOpen ?'none' :'block'}}>
                 <li className='profile-option-item'>Profil</li>
                 <li className='profile-option-item'>Ustawienia</li>
                 <li className='profile-option-item'>Moje zbórki</li>

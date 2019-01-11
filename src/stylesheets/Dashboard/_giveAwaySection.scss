@@ -1,0 +1,107 @@
+@import '../mixins.scss';
+
+.dashboard-form-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.checkboxes-form {
+    height: 100%;
+}
+
+.important-info {
+    background: #f9c910;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h3 {
+        font-weight: 100;
+        font-size: 2em;
+        margin: 0;
+
+        span {
+            padding-right: 0.5em;
+            font-weight: 700;
+            font-size: 1em;
+        }
+    }
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    background: #ebebeb;
+}
+
+.form-container {
+   padding-left: 8em;
+}
+
+.form-step-info {
+    p {
+        font-size: 2em;
+        margin: 0;
+        padding-bottom: 3em;
+    }
+
+    
+}
+
+.chcekbox-container {
+   
+}
+
+.chceckboxes-title {
+    font-size: 3.4em;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.checkbox-item {
+    padding-bottom: 4em;
+    
+    label {
+        display: flex;
+        align-items: center;  
+    }
+
+    .text-input {
+        font-size: 1.6em;
+        padding-left: 2em;
+    }
+
+    // input[type='checkbox'] {
+    //     border: 0;
+    //     clip: rect(0 0 0 0);
+    //     clippath: inset(50%);
+    //     height: 1px;
+    //     margin: -1px;
+    //     overflow: hidden;
+    //     padding: 0;
+    //     position: absolute;
+    //     white-space: nowrap;
+    //     width: 1px;
+    // }
+
+    // .chcekbox-input {
+    //     display: inline-block;
+    //     width: 30px;
+    //     height: 30px;
+    //     background: #f9c910;
+    //     border-radius: 3px;
+    //     transition: all 150ms;
+    // }
+
+    .next-btn {
+        button[type='button'] {
+            background: red;
+        }
+    }
+    
+}
+
