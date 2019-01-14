@@ -1,35 +1,82 @@
 import React, { Component } from 'react';
-import checkboxesInfo from './checkboxesInfo.js'
+
 
 class MainGiveAwayStep1 extends Component {
    
     state = { 
-        checked: false 
+        checkboxesInfo: [
+            {
+                id: 1,
+                value: 'used-clothes',
+                label: 'ubrania które nadają się do ponownego użycia',
+                isChecked: false
+            },
+            {   
+                id: 2,
+                value: 'throw-away-clothes',
+                label: 'ubrania do wyrzucenia',
+                isChecked: false
+            },
+            {
+                id: 3,
+                value: 'toys',
+                label: 'zabawki',
+                isChecked: false
+            },
+            {
+                id: 4,
+                value: 'books',
+                label: 'książki',
+                isChecked: false
+            },
+            {
+                id: 5,
+                value: 'others',
+                label: 'inne',
+                isChecked: false
+            },
+        ]
+        
     }
 
-    handleChange = (e) => {
-        this.setState({ 
-            checked: e.target.checked 
-        })
+    saveAndContinue = (event) => {
+        event.preventDefault()
+        this.props.nextStep()
+    }
+
+    back  = (e) => {
+        e.preventDefault();
+        this.props.prevStep();
+    }
+
+    handleCheckElement = (event) => {
+        let checkboxInfo = this.state.checkboxesInfo
+        
+        if (checkboxInfo.id === event.target.id) {
+            this.setState({ 
+                isChecked: !this.state.checkboxesInfo.isChecked
+            })
+        } 
     }
 
     
     render() {
-        const Checkbox = ({ type = 'checkbox', name, checked, onChange,}) => (
-            <input type={type} name={name} checked={checked} onChange={onChange}/>
+        const Checkbox = ({ type = 'checkbox', name, checked, onChange, id}) => (
+            <input type={type} id={id} name={name} checked={checked} onChange={onChange}/>
         );
 
-        const renderCheckboxes = checkboxesInfo.map((e, i) => {
+        const renderCheckboxes = this.state.checkboxesInfo.map((e, i) => {
             return <div className='checkbox-item' key={i}>
-                        <label key={i}>
-                            <Checkbox name={e.name} checked={this.state.checked} onChange={this.handleChange}/>
-                            <span className='chcekbox-input'></span>
-                            <span className='text-input'>{e.label}</span>
-                        </label> 
+                        <Checkbox id={e.id} value={e.name} checked={this.state.checked} onChange={this.handleCheckElement}/>
+                        <span className='chcekbox-input'></span>
+                        <span className='text-input'>{e.label}</span>
                     </div>
         }
         )
 
+    const { values } = this.props;
+    
+        
     return (
         <div className='checkboxes-form'>
             <div className='important-info'>
@@ -45,7 +92,7 @@ class MainGiveAwayStep1 extends Component {
                         {renderCheckboxes}  
                     </div> 
                     <div className='next-btn'>
-                        <button>Dalej</button>
+                        <button onClick={this.saveAndContinue}>Dalej</button>
                     </div>
                 </div>  
             </div>
